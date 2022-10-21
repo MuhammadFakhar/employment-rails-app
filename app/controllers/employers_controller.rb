@@ -6,7 +6,6 @@ class EmployersController < ApplicationController
   end
 
   def create
-    
     @employer = Employer.create(employer_params)
       if @employer
         respond_to do |format|
